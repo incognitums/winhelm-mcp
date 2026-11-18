@@ -21,7 +21,7 @@ Only the latest minor release is actively maintained and receives security patch
 
 If you discover a security vulnerability in WinHelm MCP, please **do not** disclose it publicly via GitHub issues or social media. Instead, please follow our coordinated disclosure process:
 
-1. **Email:** Send your report to the repository security contact or maintainer via GitHub Private Vulnerability Reporting on the [WinHelm MCP Security tab](https://github.com/dhammawatthumpra-coder/winhelm-mcp/security/advisories).
+1. **Email:** Send your report to the repository security contact or maintainer via GitHub Private Vulnerability Reporting on the [WinHelm MCP Security tab](https://github.com/incognitums/winhelm-mcp/security/advisories).
 2. **Details to Include:**
    - Detailed description of the vulnerability.
    - Proof of Concept (PoC) or reproduction steps.

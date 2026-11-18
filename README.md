@@ -16,7 +16,7 @@
 
 ## Product Status: v1.4.2 (Production / Latest)
 
-This repository contains the official release of **WinHelm v1.4.2**: the 56-tool Schema-v2 runtime, Dynamic Internal Ports, Native Approval UX with live-state-authoritative installer integration, refreshed Product Dashboard, and authoritative operational adapters. Package/runtime identity is `1.4.2`. Available on [npm](https://www.npmjs.com/package/winhelm-mcp) and [GitHub Releases](https://github.com/dhammawatthumpra-coder/winhelm-mcp/releases).
+This repository contains the official release of **WinHelm v1.4.2**: the 56-tool Schema-v2 runtime, Dynamic Internal Ports, Native Approval UX with live-state-authoritative installer integration, refreshed Product Dashboard, and authoritative operational adapters. Package/runtime identity is `1.4.2`. Available on [npm](https://www.npmjs.com/package/winhelm-mcp) and [GitHub Releases](https://github.com/incognitums/winhelm-mcp/releases).
 
 The accepted R8 public-ingress posture remains conservative by default: the Windows ingress service is Manual, the public route is inactive until explicitly activated, and D1 live mode/port 18791 is not part of active v1.4.2 production scope. The standalone Setup Assistant companion is available as a release asset on GitHub Releases.
 

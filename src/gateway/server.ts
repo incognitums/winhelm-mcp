@@ -656,11 +656,11 @@ export function createServer(options: ServerOptions): {
   app.get(["/.well-known/security.txt", "/security.txt"], (_req: Request, res: Response) => {
     res.setHeader("Content-Type", "text/plain; charset=utf-8");
     res.send(
-      `Contact: https://github.com/dhammawatthumpra-coder/winhelm-mcp/security/advisories\n` +
+      `Contact: https://github.com/incognitums/winhelm-mcp/security/advisories\n` +
       `Expires: 2027-12-31T23:59:59.000Z\n` +
       `Preferred-Languages: en, th\n` +
-      `Policy: https://github.com/dhammawatthumpra-coder/winhelm-mcp/blob/main/SECURITY.md\n` +
-      `Canonical: https://raw.githubusercontent.com/dhammawatthumpra-coder/winhelm-mcp/main/public/.well-known/security.txt\n`
+      `Policy: https://github.com/incognitums/winhelm-mcp/blob/main/SECURITY.md\n` +
+      `Canonical: https://raw.githubusercontent.com/incognitums/winhelm-mcp/main/public/.well-known/security.txt\n`
     );
   });
 

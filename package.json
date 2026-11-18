@@ -1,6 +1,6 @@
 {
   "name": "winhelm-mcp",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "WinHelm - Windows Native MCP Server with Unified HTTP/SSE/Streamable Gateway and 56 Tools",
   "type": "module",
   "main": "dist/index.js",
@@ -30,15 +30,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhammawatthumpra-coder/winhelm-mcp.git"
+    "url": "git+https://github.com/incognitums/winhelm-mcp.git"
   },
-  "homepage": "https://github.com/dhammawatthumpra-coder/winhelm-mcp#readme",
+  "homepage": "https://github.com/incognitums/winhelm-mcp#readme",
   "bugs": {
-    "url": "https://github.com/dhammawatthumpra-coder/winhelm-mcp/issues"
+    "url": "https://github.com/incognitums/winhelm-mcp/issues"
   },
   "author": {
-    "name": "dhammawatthumpra-coder",
-    "url": "https://github.com/dhammawatthumpra-coder"
+    "name": "incognitums",
+    "url": "https://github.com/incognitums"
   },
   "license": "MIT",
   "keywords": [

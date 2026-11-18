@@ -4,16 +4,16 @@
   "title": "WinHelm",
   "description": "Windows Native MCP Server with Unified HTTP/SSE/Streamable Gateway and 56 Tools",
   "repository": {
-    "url": "https://github.com/dhammawatthumpra-coder/winhelm-mcp",
+    "url": "https://github.com/incognitums/winhelm-mcp",
     "source": "github"
   },
-  "version": "1.4.2",
+  "version": "1.4.3",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "winhelm-mcp",
-      "version": "1.4.2",
+      "version": "1.4.3",
       "transport": {
         "type": "streamable-http",
         "url": "http://localhost:8788/mcp"
