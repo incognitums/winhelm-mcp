@@ -6,6 +6,7 @@ import { ConfigManager } from "../../src/config/config-manager.js";
 import { createServer, safeCompare } from "../../src/gateway/server.js";
 import { getSessionClientInfo } from "../../src/gateway/session-context.js";
 import { getApprovalEngine } from "../../src/approval/runtime.js";
+import { SERVER_VERSION } from "../../src/utils/version.js";
 
 function rawHttpRequest(
   port: number,
@@ -64,7 +65,7 @@ describe("Unified Gateway Server Integration", () => {
     const body = (await res.json()) as any;
     assert.strictEqual(body.status, "ok");
     assert.strictEqual(body.server, "winhelm-mcp");
-    assert.strictEqual(body.version, "1.4.2");
+    assert.strictEqual(body.version, SERVER_VERSION);
   });
 
   it("should smoothly redirect browser visits (Accept: text/html) on GET /mcp to dashboard", async () => {
