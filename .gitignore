@@ -47,3 +47,18 @@ start-funnel.ps1
 winhelm.local.json
 winhelm.config.json
 test-scratch-workstation/
+
+# Local working notes and internal artifacts (not part of the public repo)
+.lnwjud/
+hardening/
+HANDOFF_*.md
+MAIN_COORDINATOR_*.md
+PROMPT_V1_*.md
+WO_V1_*.md
+V1_3_*.md
+V1_4_*
+WINHELM_*.md
+TUNNEL_CLIENT_*.md
+R4_CODEX_ATTEMPT1_*
+start-funnel.ps1.pre-*.bak
+winhelm-active.ps1

@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.3] - 2026-11-19
+
+### Changed
+- Transferred project metadata and ownership to the `incognitums` GitHub account
+  (`package.json`, `manifest.json`, `server.json`, `public/.well-known/security.txt`).
+- Integration tests read `SERVER_VERSION` instead of a hardcoded `1.4.2`, so version
+  bumps no longer require test edits.
+- No changes to tools, schemas, gateway behaviour, or security defaults.
+
 ## [1.4.2] - 2026-11-05
 
 ### Changed
