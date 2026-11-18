@@ -7,13 +7,13 @@
     "url": "https://github.com/incognitums/winhelm-mcp",
     "source": "github"
   },
-  "version": "1.4.3",
+  "version": "1.4.4",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "winhelm-mcp",
-      "version": "1.4.3",
+      "version": "1.4.4",
       "transport": {
         "type": "streamable-http",
         "url": "http://localhost:8788/mcp"

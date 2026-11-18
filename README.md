@@ -10,15 +10,15 @@
 > **WinHelm MCP** — *The helm for your Windows workspace.*  
 > A lightweight, production-grade Windows Native Model Context Protocol (MCP) server featuring a built-in Single-Process Web Gateway (Streamable HTTP `/mcp` + Server-Sent Events `/sse`), Real-Time Web Monitor & Approval Dashboard, 56 Canonical System Tools with Schema-v2 Governance & Dynamic Profiles, and MCP File Preview Resource.
 
-[📖 Tools Reference](docs/TOOLS.md) • [⚙️ Tool Profiles](docs/PROFILES.md) • [🛡️ Security Architecture](docs/SECURITY.md) • [🎯 Threat Model](docs/THREAT_MODEL.md) • [📜 Terms of Use](TERMS_OF_USE.md) • [💡 Agent Examples](docs/EXAMPLES.md) • [📰 Release Notes](docs/RELEASE_NOTES_V1_4_3.md) • [📝 Changelog](CHANGELOG.md) • [🤝 Contributing](CONTRIBUTING.md)
+[📖 Tools Reference](docs/TOOLS.md) • [⚙️ Tool Profiles](docs/PROFILES.md) • [🛡️ Security Architecture](docs/SECURITY.md) • [🎯 Threat Model](docs/THREAT_MODEL.md) • [📜 Terms of Use](TERMS_OF_USE.md) • [💡 Agent Examples](docs/EXAMPLES.md) • [📰 Release Notes](docs/RELEASE_NOTES_V1_4_4.md) • [📝 Changelog](CHANGELOG.md) • [🤝 Contributing](CONTRIBUTING.md)
 
 ---
 
-## Product Status: v1.4.3 (Production / Latest)
+## Product Status: v1.4.4 (Production / Latest)
 
-This repository contains the official release of **WinHelm v1.4.3**: the 56-tool Schema-v2 runtime, Dynamic Internal Ports, Native Approval UX with live-state-authoritative installer integration, refreshed Product Dashboard, and authoritative operational adapters. Package/runtime identity is `1.4.3`. Available on [npm](https://www.npmjs.com/package/winhelm-mcp) and [GitHub Releases](https://github.com/incognitums/winhelm-mcp/releases).
+This repository contains the official release of **WinHelm v1.4.4**: the 56-tool Schema-v2 runtime, Dynamic Internal Ports, Native Approval UX with live-state-authoritative installer integration, refreshed Product Dashboard, and authoritative operational adapters. Package/runtime identity is `1.4.4`. Available on [npm](https://www.npmjs.com/package/winhelm-mcp) and [GitHub Releases](https://github.com/incognitums/winhelm-mcp/releases).
 
-The accepted R8 public-ingress posture remains conservative by default: the Windows ingress service is Manual, the public route is inactive until explicitly activated, and D1 live mode/port 18791 is not part of active v1.4.3 production scope. The standalone Setup Assistant companion is available as a release asset on GitHub Releases.
+The accepted R8 public-ingress posture remains conservative by default: the Windows ingress service is Manual, the public route is inactive until explicitly activated, and D1 live mode/port 18791 is not part of active v1.4.4 production scope. The standalone Setup Assistant companion is available as a release asset on GitHub Releases.
 
 ---
 
@@ -70,7 +70,7 @@ The accepted R8 public-ingress posture remains conservative by default: the Wind
    - **Web Monitor & Approval Dashboard:** `http://<HOST>:<PORT>/` (Interactive metrics, pending approvals, sessions, drives, memory, GPU, and live audit logs)
    - **Interactive File Viewer:** `http://<HOST>:<PORT>/preview?path=...` (Rich Markdown & code viewer with syntax formatting)
    - **Health Check:** `http://<HOST>:<PORT>/health`
-   - **Port behavior:** v1.4.3 supports OS-selected internal ports for clean/automatic topology while existing fixed deployments remain fixed unless explicitly migrated; fixed `8788` remains a supported compatibility configuration.
+   - **Port behavior:** v1.4.4 supports OS-selected internal ports for clean/automatic topology while existing fixed deployments remain fixed unless explicitly migrated; fixed `8788` remains a supported compatibility configuration.
 2. **Schema-v2 Governance & Human Approvals:**
    - Granular folder scoping (`read`, `readwrite`) preventing unauthorized filesystem traversal.
    - Terminal policies (`off`, `ask`, `full`) and risk classifications (R0 to R5).
@@ -251,14 +251,14 @@ In schema-v2, profiles represent policy presets that configure folder permission
 
 > Profile capability is evaluated before Approval Mode. `full` terminal configuration means command execution is available to the profile; it does **not** mean prompts are bypassed. Manual asks for permitted state-changing work, Smart is risk-sensitive as summarized above, and Trusted removes routine prompts only for already-permitted actions. Explicit- and mandatory-confirmation floors still ask in every Approval Mode.
 
-> ⚠️ **Note on Dangerous Mode:** An unrestricted `dangerous` mode is **not shipped** in v1.4.3. Safe / Balanced / Power remain the supported product profiles, with Manual / Smart / Trusted as a separate Approval Mode dimension.
+> ⚠️ **Note on Dangerous Mode:** An unrestricted `dangerous` mode is **not shipped** in v1.4.4. Safe / Balanced / Power remain the supported product profiles, with Manual / Smart / Trusted as a separate Approval Mode dimension.
 > 💡 **Legacy Presets:** Named presets (`minimal`, `core`, `dev`, `sysadmin`, `full`) remain supported in schema-v2 as compatibility presets that map to specific tool policy subsets.
 
 ---
 
 ## Canonical Tool Registry (56 Tools)
 
-WinHelm v1.4.3 defines **56 canonical public tools** in its single source of truth registry (`src/tools/registry.ts`), validated via `npm run lint:tools`:
+WinHelm v1.4.4 defines **56 canonical public tools** in its single source of truth registry (`src/tools/registry.ts`), validated via `npm run lint:tools`:
 
 - **38 legacy tools** across terminal/background tasks, filesystem/search/document, desktop, system/services, and network diagnostics.
 - **3 Schema-v2 execution/recovery tools:** `command_run`, `winhelm_status`, and `winhelm_job_status`.
@@ -267,8 +267,8 @@ WinHelm v1.4.3 defines **56 canonical public tools** in its single source of tru
 
 ### Runtime exposure
 
-- **Legacy configuration compatibility:** the historical legacy surface remains bounded for compatibility and does not define the v1.4.3 public release count.
-- **Schema-v2 v1.4.3:** all **56** canonical public tools are registered; profile/capability policy and Approval Mode are evaluated at call time.
+- **Legacy configuration compatibility:** the historical legacy surface remains bounded for compatibility and does not define the v1.4.4 public release count.
+- **Schema-v2 v1.4.4:** all **56** canonical public tools are registered; profile/capability policy and Approval Mode are evaluated at call time.
 - Capability denial, absolute deny, and mandatory/explicit confirmation remain stronger than Manual / Smart / Trusted Approval Mode.
 
 ---
@@ -362,7 +362,7 @@ winhelm --host 0.0.0.0 --auth my-secret-token
 - **`/sse`** — Server-Sent Events transport endpoint.
 - **`/message`** — POST endpoint for incoming JSON-RPC messages in SSE mode.
 - **`/preview`** — Interactive browser file viewer (`/preview?path=D:\project\README.md`).
-- **`/health`** — Health check probe (`{"status": "ok", "version": "1.4.3"}`).
+- **`/health`** — Health check probe (`{"status": "ok", "version": "1.4.4"}`).
 - **`/admin/approvals`** — Admin approvals list and decision API.
 
 ---
@@ -405,7 +405,7 @@ The following items remain deferred or separately gated:
 
 ## Documentation & Deep Dive
 
-- 📰 **[Release Notes](docs/RELEASE_NOTES_V1_4_3.md)**: Metadata transfer to the incognitums account and a version-agnostic test fix for v1.4.3.
+- 📰 **[Release Notes](docs/RELEASE_NOTES_V1_4_4.md)**: Documentation republish so the npm README matches the repository; no code changes.
 - 📖 **[Tools Reference](docs/TOOLS.md)**: Canonical 56-tool surface, risk/tier organization, and the detailed per-tool specifications currently documented there.
 - ⚙️ **[Tool Profiles](docs/PROFILES.md)**: Safe, Balanced, Power profiles and legacy preset mapping.
 - 🛡️ **[Security Architecture](docs/SECURITY.md)**: Permissions model, approval lifecycle, and cross-process architecture.

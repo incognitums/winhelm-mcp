@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.4.4] - 2026-11-19
+
+### Changed (documentation only)
+- Republished so the npm README matches the repository (v1.4.3 shipped with the previous
+  README, and published npm metadata cannot be edited).
+- README status/identity and `/health` example now report `1.4.4`; release notes link
+  points at the v1.4.4 notes.
+- No source, tool, schema, gateway, or security changes.
+
 ## [1.4.3] - 2026-11-19
 
 ### Changed
